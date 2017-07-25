@@ -73,7 +73,7 @@ public class BugController {
 		try {
 			Bug r = bugService.save(bug);
 			j.setSuccess(true);
-			j.setMsg("添加成了！");
+			j.setMsg("添加成！");
 			j.setObj(r);
 		} catch (Exception e) {
 			j.setMsg(e.getMessage());
@@ -87,7 +87,7 @@ public class BugController {
 		bugService.remove(bug.getIds());
 		Json j = new Json();
 		j.setSuccess(true);
-		j.setMsg("删除成功aaaa了！");
+		j.setMsg("删除成功！");
 		return j;
 	}
 
