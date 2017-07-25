@@ -87,7 +87,7 @@ public class BugController {
 		bugService.remove(bug.getIds());
 		Json j = new Json();
 		j.setSuccess(true);
-		j.setMsg("删除成功！");
+		j.setMsg("删除成功了！");
 		return j;
 	}
 
