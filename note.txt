@@ -1,0 +1,20 @@
+1.置空schema的值
+@Table(name = "TMENU", schema = "")
+
+2.删除ID的unique = true属性
+@Id
+@Column(name = "ID", nullable = false, length = 36)
+
+3.改变DATE为TIMESTAMP
+@Temporal(TemporalType.TIMESTAMP)
+
+4.为model加上
+@DynamicUpdate(true)
+@DynamicInsert(true)
+
+5.为Tbug添加新的构造函数
+public Tbug(String id, String name, Date createdatetime) {
+	this.id = id;
+	this.name = name;
+	this.createdatetime = createdatetime;
+}
